@@ -36,10 +36,6 @@ const NavBar = () => {
                     <LinkContainer to='/boletim'>
                         <Nav.Link className='link-light'>Boletim</Nav.Link>
                     </LinkContainer>
-                    
-                    <Nav.Link className='link-light'>Provas</Nav.Link>
-
-                    <Nav.Link className='link-light'>Conteúdo</Nav.Link>
 
                     <Nav.Link className='link-light'>Fórum</Nav.Link>
 

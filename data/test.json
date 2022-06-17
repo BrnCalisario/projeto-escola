@@ -1,0 +1,104 @@
+{
+    "alunos": [
+        {
+            "id": 1,
+            "nomeCompleto": "Pedro Souza",
+            "ano": "5º Ano",
+            "materias": [
+                {
+                    "id": 10,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                },
+                {
+                    "id": 2,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                },
+                {
+                    "id": 3,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.5
+                },
+                {
+                    "id": 40,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                },
+                {
+                    "id": 5,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                },
+                {
+                    "id": 6,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                },
+                {
+                    "id": 7,
+                    "notas": [
+                        60,
+                        60
+                    ],
+                    "frequencia": 0.8
+                }
+            ]
+        }
+    ],
+    "materias": [
+        {
+            "id": 1,
+            "nome": "Ciências",
+            "nomeProfessor": "João Rodrigues Lima"
+        },
+        {
+            "id": 2,
+            "nome": "Geografia",
+            "nomeProfessor": "Ferdinando Batista"
+        },
+        {
+            "id": 3,
+            "nome": "História",
+            "nomeProfessor": "Cézar Augusto"
+        },
+        {
+            "id": 4,
+            "nome": "Artes",
+            "nomeProfessor": "Lucy Mara"
+        },
+        {
+            "id": 5,
+            "nome": "Matemática",
+            "nomeProfessor": "Zé Maria"
+        },
+        {
+            "id": 6,
+            "nome": "Português",
+            "nomeProfessor": "Zumira Lemos"
+        },
+        {
+            "id": 7,
+            "nome": "Educação Física",
+            "nomeProfessor": "Beatriz Almeida Ferreira"
+        }
+    ]
+}

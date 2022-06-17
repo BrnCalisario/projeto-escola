@@ -8,7 +8,7 @@ import { CalendarPicker } from '@mui/x-date-pickers/CalendarPicker';
 import { ptBR } from 'date-fns/locale';
 
 const minDate = new Date();
-const maxDate = new Date('2023-01-01T00:00:00.000');
+const maxDate = new Date('2022-12-31T00:00:00.000');
 
 const Calendario = () => {
 

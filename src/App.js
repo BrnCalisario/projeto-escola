@@ -5,6 +5,8 @@ import Aulas from './pages/Aulas';
 
 import { Container } from "react-bootstrap";
 import Notas from './pages/Notas';
+import Test from './components/Test';
+import Materia from './components/Materia';
 
 function App() {
     return (
@@ -21,6 +23,15 @@ function App() {
                         </Route>
                         <Route path="/boletim">
                             <Notas />
+                        </Route>
+
+                        <Route path="/materias/:id">
+                            <Materia />
+                        </Route>
+
+
+                        <Route path="/test">
+                            <Test />
                         </Route>
                     </Switch>
                 </Container>

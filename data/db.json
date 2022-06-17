@@ -4,8 +4,8 @@
             "id": 1,
             "nome": "Ciências",
             "nomeProfessor": "João Rodrigues Lima",
-            "nota1": 50,
-            "nota2": 50,
+            "nota1": 60,
+            "nota2": 60,
             "frequencia": 0.8
         },
         {
@@ -14,38 +14,38 @@
             "nomeProfessor": "Ferdinando Batista",
             "nota1": 50,
             "nota2": 50,
-            "frequencia": 0.8
+            "frequencia": 1
         },
         {
             "id": 3,
             "nome": "História",
             "nomeProfessor": "Cézar Augusto",
-            "nota1": 80,
-            "nota2": 80,
-            "frequencia": 0.5
+            "nota1": 0,
+            "nota2": 0,
+            "frequencia": 0
         },
         {
             "id": 4,
             "nome": "Artes",
             "nomeProfessor": "Lucy Mara",
-            "nota1": 80,
+            "nota1": 60,
             "nota2": 60,
-            "frequencia": 0.8
+            "frequencia": 0.75
         },
         {
             "id": 5,
             "nome": "Matemática",
             "nomeProfessor": "Zé Maria",
-            "nota1": 50,
-            "nota2": 50,
-            "frequencia": 0.8
+            "nota1": 90,
+            "nota2": 40,
+            "frequencia": 0.6
         },
         {
             "id": 6,
             "nome": "Português",
             "nomeProfessor": "Zumira Lemos",
-            "nota1": 50,
-            "nota2": 50,
+            "nota1": 100,
+            "nota2": 20,
             "frequencia": 0.8
         },
         {
@@ -69,17 +69,19 @@
             "nomeProfessor": "Aline Souza Dias"
         }
     ],
-
-    "alunos": [
+    
+    "provas": [
         {
             "id": 1,
-            "nome": "Joãzinho",
-            "atividadesExtras": ["Judô"]
+            "materia": "Ciências",
+            "nomeProfessor":"Ferdinando Batista",
+            "data": "15/10/2022"
         },
         {
             "id": 2,
-            "nome": "Mariazinha",
-            "atividadesExtras": ["Ballet"]
+            "materia": "Matemática",
+            "nomeProfessor":"Zé Maria",
+            "data": "13/10/2022"
         }
     ]
 }
