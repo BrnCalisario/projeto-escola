@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 import BookIcon from '@mui/icons-material/Book';
 
 import { Container, Row, Col} from "react-bootstrap";
-import ContentBox from "./ContentBox";
+import ContentBox from "./content/ContentBox";
 
 
 const Materia = () => {
@@ -16,12 +16,12 @@ const Materia = () => {
         {
             id: 1,
             nome: "Atividade Fixação 1",
-            nomeProfessor: "Exemplo de ativadade"
+            nomeProfessor: "📃 Exemplo de ativadade"
         },
         {
             id: 2,
             nome: "Atividade Fixação 2",
-            nomeProfessor: "Exemplo de ativadade"
+            nomeProfessor: "📃 Exemplo de ativadade"
         }
     ];
 

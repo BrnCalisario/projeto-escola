@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Calendario from '../components/Calendario';
-import ContentBox from '../components/ContentBox';
+import ContentBox from '../components/content/ContentBox';
 import useFetch from '../hooks/useFetch';
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';

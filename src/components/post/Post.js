@@ -1,0 +1,28 @@
+import { useParams } from "react-router";
+import useFetch from "../../hooks/useFetch";
+
+const Post = () => {
+
+    const { id } = useParams();
+
+    const { data: post, error, isPending } = useFetch('http://localhost:8000/posts/' + id);
+
+    return (
+        <div className="w-50 mt-5 mx-auto ">
+            {post &&
+                <div>
+                    <h1 className="mb-3 border-bottom"> {post.assunto}</h1>
+
+                    <div className="d-flex post-info">
+                        <p>Autor: {post.autor}</p>
+                        <p className="ms-auto">{post.data}</p>
+                    </div>
+                    <p className="border rounded p-3">{ post.conteudo } </p>
+                </div>
+            }
+
+        </div>
+    );
+}
+
+export default Post;

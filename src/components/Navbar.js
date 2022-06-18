@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <Navbar expand="lg" className="my-navbar py-2">
             <Container>
-                <Navbar.Brand id="logo-title" className="text-light" href="#">
+                <Navbar.Brand id="logo-title" className="text-light" href="/">
                     <img
                         alt=""
                         src={logo}
@@ -24,7 +24,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end text-center mx-2">
-                    
+
                     <LinkContainer to="/">
                         <Nav.Link className='link-light'>Home</Nav.Link>
                     </LinkContainer>
@@ -37,7 +37,10 @@ const NavBar = () => {
                         <Nav.Link className='link-light'>Boletim</Nav.Link>
                     </LinkContainer>
 
-                    <Nav.Link className='link-light'>Fórum</Nav.Link>
+                    <LinkContainer to='/forum'>
+                        <Nav.Link className='link-light'>Fórum</Nav.Link>
+                    </LinkContainer>
+
 
                     <Nav.Link className='link-light'>Sair</Nav.Link>
 

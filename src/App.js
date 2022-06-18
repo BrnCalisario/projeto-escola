@@ -5,8 +5,12 @@ import Aulas from './pages/Aulas';
 
 import { Container } from "react-bootstrap";
 import Notas from './pages/Notas';
+import Forum from './pages/Forum';
 import Test from './components/Test';
 import Materia from './components/Materia';
+import Post from './components/post/Post';
+import CreatePost from './components/post/CreatePost';
+
 
 function App() {
     return (
@@ -29,10 +33,23 @@ function App() {
                             <Materia />
                         </Route>
 
+                        <Route path="/forum/:id">
+                            <Post />
+                        </Route>
+
+                        <Route path="/forum">
+                            <Forum />
+                        </Route>
+
+                        <Route path="/novo-post">
+                            <CreatePost />
+                        </Route>
+                        
 
                         <Route path="/test">
                             <Test />
                         </Route>
+                        
                     </Switch>
                 </Container>
             </div>

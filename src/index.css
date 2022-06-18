@@ -1,7 +1,7 @@
 /* Ubuntu */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 /* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
 
 body {
@@ -32,7 +32,7 @@ body {
     max-height: 300px;
 }
 
-.loading{
+.loading {
     margin: 0 auto;
 }
 
@@ -44,7 +44,8 @@ body {
     text-decoration: none;
 }
 
-.materia h3, p {
+.materia h3,
+p {
     color: #393b3d;
 }
 
@@ -55,4 +56,40 @@ body {
 
 .lista {
     font-size: 1.5rem;
+}
+
+.post-info {
+    font-size: 1.25rem;
+}
+
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+.create input,
+.create textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button {
+    background: #194b91;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    clear: both;
+    font-size: 1.2rem;
+}
+
+form {
+    overflow: hidden;
 }

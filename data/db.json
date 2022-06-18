@@ -1,87 +1,116 @@
 {
-    "materias": [
-        {
-            "id": 1,
-            "nome": "Ciências",
-            "nomeProfessor": "João Rodrigues Lima",
-            "nota1": 60,
-            "nota2": 60,
-            "frequencia": 0.8
-        },
-        {
-            "id": 2,
-            "nome": "Geografia",
-            "nomeProfessor": "Ferdinando Batista",
-            "nota1": 50,
-            "nota2": 50,
-            "frequencia": 1
-        },
-        {
-            "id": 3,
-            "nome": "História",
-            "nomeProfessor": "Cézar Augusto",
-            "nota1": 0,
-            "nota2": 0,
-            "frequencia": 0
-        },
-        {
-            "id": 4,
-            "nome": "Artes",
-            "nomeProfessor": "Lucy Mara",
-            "nota1": 60,
-            "nota2": 60,
-            "frequencia": 0.75
-        },
-        {
-            "id": 5,
-            "nome": "Matemática",
-            "nomeProfessor": "Zé Maria",
-            "nota1": 90,
-            "nota2": 40,
-            "frequencia": 0.6
-        },
-        {
-            "id": 6,
-            "nome": "Português",
-            "nomeProfessor": "Zumira Lemos",
-            "nota1": 100,
-            "nota2": 20,
-            "frequencia": 0.8
-        },
-        {
-            "id": 7,
-            "nome": "Educação Física",
-            "nomeProfessor": "Beatriz Almeida Ferreira",
-            "nota1": 50,
-            "nota2": 50,
-            "frequencia": 0.8
-        }
-    ],
-    "atividadesExtra": [
-        {
-            "id": 1,
-            "nome": "Judô",
-            "nomeProfessor": "Beatriz Almeida Ferreira"
-        },
-        {
-            "id": 2,
-            "nome": "Ballet",
-            "nomeProfessor": "Aline Souza Dias"
-        }
-    ],
-    
-    "provas": [
-        {
-            "id": 1,
-            "materia": "Ciências",
-            "nomeProfessor":"Ferdinando Batista",
-            "data": "15/10/2022"
-        },
-        {
-            "id": 2,
-            "materia": "Matemática",
-            "nomeProfessor":"Zé Maria",
-            "data": "13/10/2022"
-        }
-    ]
+  "materias": [
+    {
+      "id": 1,
+      "nome": "Ciências",
+      "nomeProfessor": "João Rodrigues Lima",
+      "nota1": 60,
+      "nota2": 60,
+      "frequencia": 0.8
+    },
+    {
+      "id": 2,
+      "nome": "Geografia",
+      "nomeProfessor": "Ferdinando Batista",
+      "nota1": 50,
+      "nota2": 50,
+      "frequencia": 1
+    },
+    {
+      "id": 3,
+      "nome": "História",
+      "nomeProfessor": "Cézar Augusto",
+      "nota1": 0,
+      "nota2": 0,
+      "frequencia": 0
+    },
+    {
+      "id": 4,
+      "nome": "Artes",
+      "nomeProfessor": "Lucy Mara",
+      "nota1": 60,
+      "nota2": 60,
+      "frequencia": 0.75
+    },
+    {
+      "id": 5,
+      "nome": "Matemática",
+      "nomeProfessor": "Zé Maria",
+      "nota1": 90,
+      "nota2": 40,
+      "frequencia": 0.6
+    },
+    {
+      "id": 6,
+      "nome": "Português",
+      "nomeProfessor": "Zumira Lemos",
+      "nota1": 100,
+      "nota2": 20,
+      "frequencia": 0.8
+    },
+    {
+      "id": 7,
+      "nome": "Educação Física",
+      "nomeProfessor": "Beatriz Almeida Ferreira",
+      "nota1": 50,
+      "nota2": 50,
+      "frequencia": 0.8
+    }
+  ],
+  "atividadesExtra": [
+    {
+      "id": 1,
+      "nome": "Judô",
+      "nomeProfessor": "Beatriz Almeida Ferreira"
+    },
+    {
+      "id": 2,
+      "nome": "Ballet",
+      "nomeProfessor": "Aline Souza Dias"
+    }
+  ],
+  "provas": [
+    {
+      "id": 1,
+      "materia": "Ciências",
+      "nomeProfessor": "Ferdinando Batista",
+      "data": "15/10/2022"
+    },
+    {
+      "id": 2,
+      "materia": "Matemática",
+      "nomeProfessor": "Zé Maria",
+      "data": "13/10/2022"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "autor": "Pedro Silva",
+      "assunto": "Monitoramento dos Corredores",
+      "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatum ullam, odit cum in ipsa, voluptatem reprehenderit culpa velit, deserunt cupiditate nihil quia aliquam dicta accusamus quos corporis nam consequatur.",
+      "data": "20/07/2022"
+    },
+    {
+      "id": 2,
+      "autor": "Julio Silagi",
+      "assunto": "Merenda",
+      "conteudo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatum ullam, odit cum in ipsa, voluptatem reprehenderit culpa velit, deserunt cupiditate nihil quia aliquam dicta accusamus quos corporis nam consequatur. ",
+      "data": "21/07/2022"
+    },
+    {
+      "autor": "Renan Odoni",
+      "assunto": "Merendas Melhores",
+      "conteudo": "The term “history” and \"history object\" in this documentation refers to the history package, which is one of only 2 major dependencies of React Router (besides React itself), and which provides several different implementations for managing session history in JavaScript in various environments.",
+      "data": "18/06/2022",
+      "id": 3
+    },
+    {
+      "autor": "teste",
+      "assunto": "Teste",
+      "conteudo": "teste",
+      "data": "18/06/2022",
+      "id": 4
+    }
+  ]
 }

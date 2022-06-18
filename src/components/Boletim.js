@@ -13,7 +13,7 @@ const Boletim = () => {
             <TabTitle>Boletim</TabTitle>
             {error && <div>Erro!!</div>}
             {isPending && <div className='d-flex justify-content-around mt-5'><Circles height="250" width="250" color='#476b9e' ariaLabel='loading' /></div>}
-            {materias && <Table striped borded hover responsive>
+            {materias && <Table striped hover responsive>
                 <thead>
                     <tr>
                         <th>Matéria</th>
@@ -28,7 +28,7 @@ const Boletim = () => {
 
                 <tbody>
                     {materias.map((materia) => (
-                        <tr>
+                        <tr key={materia.id}>
                             <th>{materia.nome}</th>
                             <th>{materia.nomeProfessor}</th>
                             <th>{materia.nota1}</th>
