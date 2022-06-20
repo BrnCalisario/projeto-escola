@@ -11,6 +11,7 @@ import Test from "./components/Test";
 import Materia from "./components/Materia";
 import Post from "./components/post/Post";
 import CreatePost from "./components/post/CreatePost";
+import Financeiro from "./pages/Financeiro";
 
 
 function App() {
@@ -38,7 +39,9 @@ function App() {
                         <Route path="/responsavel/matricula">
                             <Matricula />
                         </Route>
-
+                        <Route path="/responsavel/financeiro">
+                            <Financeiro />
+                        </Route>
 
 
                         <Route path="/forum/:id">
