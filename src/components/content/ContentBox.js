@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 
 const ContentBox = ({ content: materias, title, shouldLink }) => {
 
-
-
     return (
         <Box sx={{
             width: 'auto',

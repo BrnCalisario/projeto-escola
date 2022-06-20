@@ -8,9 +8,9 @@ import SendIcon from '@mui/icons-material/Send';
 function formataData() {
     var data = new Date(),
         dia = data.getDate().toString(),
-        diaF = (dia.length == 1) ? '0' + dia : dia,
+        diaF = (dia.length === 1) ? '0' + dia : dia,
         mes = (data.getMonth() + 1).toString(),
-        mesF = (mes.length == 1) ? '0' + mes : mes,
+        mesF = (mes.length === 1) ? '0' + mes : mes,
         anoF = data.getFullYear();
     return diaF + "/" + mesF + "/" + anoF;
 }
@@ -19,15 +19,12 @@ function formataData() {
 const CreatePost = () => {
 
 
-
-
-
     // Assunto, Conteudo , Autor e Data
     const [assunto, setAssunto] = useState('');
     const [body, setBody] = useState('');
     const [autor, setAutor] = useState('');
     const [isPending, setIsPending] = useState(false);
-    const [data, setDate] = useState(formataData())
+    const [data] = useState(formataData())
 
     const history = useHistory();
 
@@ -78,7 +75,7 @@ const CreatePost = () => {
                     value={autor}
                     onChange={(e) => setAutor(e.target.value)}
                 ></input>
-                <button className=''>Adicionar Postagem  <SendIcon /> </button>
+                <button>Adicionar Postagem  <SendIcon /> </button>
             </form>
 
         </div>

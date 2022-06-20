@@ -11,7 +11,7 @@ const Post = () => {
         <div className="w-50 mt-5 mx-auto ">
             {post &&
                 <div>
-                    <h1 className="mb-3 border-bottom"> {post.assunto}</h1>
+                    <h1 className="mb-3 pb-2 border-bottom"> {post.assunto}</h1>
 
                     <div className="d-flex post-info">
                         <p>Autor: {post.autor}</p>

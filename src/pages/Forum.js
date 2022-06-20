@@ -8,8 +8,6 @@ import Table from 'react-bootstrap/esm/Table';
 import { useHistory } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 
-import { Circles } from 'react-loader-spinner';
-
 import { Link } from "react-router-dom";
 
 const Forum = () => {
@@ -41,7 +39,6 @@ const Forum = () => {
 
                     <tbody>
                         {error && <div>Erro</div>}
-                        {isPending && <div className='d-flex justify-content-center mt-5'><Circles height="150" width="150" color='#476b9e' ariaLabel='loading' /></div>}
                         {posts && posts.map((post) => (
                             <tr onClick={() => handleRowClick(post.id)} key={post.id}>
                                 <th>{post.autor}</th>
@@ -59,11 +56,12 @@ const Forum = () => {
                         variant="contained"
                         style={{
                             borderRadius: 35,
-                            backgroundColor: "#333",
+                            // backgroundColor: "#333",
                             padding: "18px 36px",
                             fontSize: "18px",
                         }}
                         endIcon={<AddIcon />}
+                        className="title"
                     >
                         Nova Postagem
                     </Button>

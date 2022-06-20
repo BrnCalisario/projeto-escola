@@ -4,9 +4,11 @@
             "id": 1,
             "nomeCompleto": "Pedro Souza",
             "ano": "5º Ano",
+            "email": "pedro.souza@gmail.com",
+            "telefone": "9999-8888",
             "materias": [
                 {
-                    "id": 10,
+                    "id": 1,
                     "notas": [
                         60,
                         60
@@ -30,7 +32,7 @@
                     "frequencia": 0.5
                 },
                 {
-                    "id": 40,
+                    "id": 4,
                     "notas": [
                         60,
                         60
@@ -60,6 +62,42 @@
                         60
                     ],
                     "frequencia": 0.8
+                },
+                {
+                    "id": 8,
+                    "notas": [
+                        60,
+                        60
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": 2,
+            "nomeCompleto": "Renan Odoni",
+            "ano": "5º Ano",
+            "email": "renan.odoni@gmail.com",
+            "telefone": "(41) 2222-3333",
+            "materias": [
+                {
+                    "id": 1,
+                    "notas": [
+                        100,
+                        100]
+                },
+                {
+                    "id": 3,
+                    "notas":[
+                        60,
+                        60
+                    ]
+                },
+                {
+                    "id": 2,
+                    "notas":[
+                        60,
+                        60
+                    ]
                 }
             ]
         }
@@ -98,6 +136,11 @@
         {
             "id": 7,
             "nome": "Educação Física",
+            "nomeProfessor": "Beatriz Almeida Ferreira"
+        },
+        {
+            "id": 8,
+            "nome": "Judô",
             "nomeProfessor": "Beatriz Almeida Ferreira"
         }
     ]
