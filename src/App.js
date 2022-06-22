@@ -6,9 +6,6 @@ import Aulas from "./pages/aluno/Aulas";
 import Forum from "./pages/aluno/ForumAluno";
 import Boletim from "./pages/aluno/Boletim";
 
-
-
-
 import { Container } from "react-bootstrap";
 
 import Test from "./components/Test";
@@ -17,13 +14,16 @@ import Post from "./components/post/Post";
 import CreatePost from "./components/post/CreatePost";
 import Financeiro from "./pages/Financeiro";
 
-
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/professor/Dashboard";
 import ForumAluno from "./pages/aluno/ForumAluno";
 import Main from "./pages/Main";
 import HomeResp from "./pages/responsavel/HomeResp";
 import ForumResp from "./pages/responsavel/ForumResp"
 import Matricula from "./pages/responsavel/Matricula";
+import HomeSec from "./pages/secretaria/HomeSec";
+import MatriculaSec from "./pages/secretaria/MatriculaSec";
+import ForumSec from "./pages/secretaria/ForumSec";
+import PostSec from "./pages/secretaria/PostSec";
 
 function App() {
     return (
@@ -65,10 +65,24 @@ function App() {
                         </Route>
 
 
-                        <Route exact path="/professor/dashboard">
+                        <Route exact path="/professor">
                             <Dashboard />
                         </Route>
 
+
+
+                        <Route exact path="/secretaria">
+                            <HomeSec />
+                        </Route>
+                        <Route exact path="/secretaria/matriculas">
+                            <MatriculaSec />
+                        </Route>
+                        <Route exact path="/secretaria/forum">
+                            <ForumSec />
+                        </Route>
+                        <Route path="/secretaria/forum/:id">
+                            <PostSec />
+                        </Route>
 
 
                         <Route path="/forum/:id">

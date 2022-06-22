@@ -19,7 +19,7 @@ const Main = () => {
         },
         {
             login: "renan01",
-            pw: "1111"
+            pw: "0000"
         }
     ]
 
@@ -30,6 +30,17 @@ const Main = () => {
         },
         {
             login: "sergio01",
+            pw: "0000"
+        }
+    ]
+
+    const professores = [
+        {
+            login: "professor",
+            pw: "0000"
+        },
+        {
+            login: "Paulo Meneguel",
             pw: "0000"
         }
     ]
@@ -113,11 +124,10 @@ const Main = () => {
                         </button>
 
                         <button
+                            onClick={() => checkUser(professores, "/professor")}
                             className="mx-2"
-                            style={{ background: "#ff934a", color: "#FFF", padding: "1rem" }}>
-                            {/* <LinkContainer to="/professor/dashboard">
-                                <Nav.Link className='d-inline-block link-light '>Professor</Nav.Link>
-                            </LinkContainer> */}Professor
+                            style={{ background: "#ff934a", color: "#FFF", padding: "1rem" }}
+                        >Professor
                         </button>
 
                     </div>

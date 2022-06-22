@@ -1,6 +1,7 @@
 // import BuildIcon from '@mui/icons-material/Build';
-import BoxAlunos from "../components/content/BoxAlunos";
+import BoxAlunos from "../../components/content/BoxAlunos";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import NavBarProf from "./NavBarProf";
 const Dashboard = () => {
     
     const alunos = [
@@ -23,9 +24,9 @@ const Dashboard = () => {
     
     return (
         <div>
+            <NavBarProf />
             <h1 className="text-center my-5 border-bottom">Dashboard Professor</h1>
-
-            <Container>
+            <Container id="content">
                 <Row>
                     <Col>
                         <h3 style={{fontSize: "2.5rem"}}>Mauricio dos Santos</h3>
