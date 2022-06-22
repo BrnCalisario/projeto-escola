@@ -111,6 +111,13 @@
       "conteudo": "teste",
       "data": "18/06/2022",
       "id": 4
+    },
+    {
+      "autor": "Autor",
+      "assunto": "Postagem",
+      "conteudo": "Conteúdo da Postagem",
+      "data": "21/06/2022",
+      "id": 5
     }
   ]
 }

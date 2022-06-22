@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { CalendarPicker } from '@mui/x-date-pickers/CalendarPicker';
-// import { MonthPicker } from '@mui/x-date-pickers/MonthPicker';
-// import { YearPicker } from '@mui/x-date-pickers/YearPicker';
-// import Grid from '@mui/material/Grid';
+
 import { ptBR } from 'date-fns/locale';
 
 const minDate = new Date();
