@@ -25,7 +25,7 @@ const HomeResp = () => {
                             <div className='d-inline-block align-top'>
                                 <h2 >Informações</h2>
                                 <p>Telefone: (41) 9999-9999</p>
-                                <p>Email: renan.odoni@gmail.com</p>
+                                <p>Email: mendes@gmail.com</p>
                             </div>
                         </Col>
                     </Row>
