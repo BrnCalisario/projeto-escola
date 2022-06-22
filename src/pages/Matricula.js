@@ -2,7 +2,7 @@ import { useState } from "react";
 import { cpfMask } from "../utils/mask"
 import InputMask from 'react-input-mask';
 
-import SendIcon from '@mui/icons-material/Send';
+// import SendIcon from '@mui/icons-material/Send';
 import Button from "@mui/material/Button";
 
 const Matricula = () => {
@@ -62,7 +62,7 @@ const Matricula = () => {
                         padding: "18px 36px",
                         fontSize: "18px",
                     }}
-                    endIcon={<SendIcon />}
+                    // endIcon={<SendIcon />}
                     className="title mt-5"
                 >
                     Matricular

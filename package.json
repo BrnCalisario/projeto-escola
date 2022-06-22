@@ -1,14 +1,10 @@
 {
   "name": "projeto-escola",
-  "homepage": "htttps://BrnCalisario.github.io/projeto-escola",
+  "homepage": "https://projetoescola.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
     "@material-ui/core": "^4.12.4",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.8.4",
     "@mui/styled-engine-sc": "^5.8.0",
     "@mui/x-data-grid": "^5.12.1",
     "@mui/x-date-pickers": "^5.0.0-alpha.6",

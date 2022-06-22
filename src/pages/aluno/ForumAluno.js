@@ -1,5 +1,5 @@
-import ForumIcon from '@mui/icons-material/Forum';
-import AddIcon from '@mui/icons-material/Add';
+// import ForumIcon from '@mui/icons-material/Forum';
+// import AddIcon from '@mui/icons-material/Add';
 import Button from "@mui/material/Button";
 
 import TabTitle from '../../components/TabTitle';
@@ -28,7 +28,9 @@ const ForumAluno = () => {
         <div>
             <NavbarAluno />
             <Container id="content">
-                <h1 className="text-center my-5 border-bottom"> <ForumIcon style={{ fontSize: "4rem" }} /> Fórum</h1>
+                <h1 className="text-center my-5 border-bottom">
+                     {/* <ForumIcon style={{ fontSize: "4rem" }} />  */}
+                     Fórum</h1>
                 <div className="mt-5 w-75 ms-auto me-auto border">
                     <TabTitle >Postagens</TabTitle>
 
@@ -64,7 +66,7 @@ const ForumAluno = () => {
                                 padding: "18px 36px",
                                 fontSize: "18px",
                             }}
-                            endIcon={<AddIcon />}
+                            // endIcon={<AddIcon />}
                             className="title"
                         >
                             Nova Postagem

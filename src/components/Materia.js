@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-import BookIcon from '@mui/icons-material/Book';
+
+// import BookIcon from '@mui/icons-material/Book';
 
 import { Container, Row, Col } from "react-bootstrap";
 import ContentBox from "./content/ContentBox";
@@ -58,7 +59,7 @@ const Materia = () => {
                         <Container className="clearfix border-bottom ">
                             <Row className="w-50 float-start">
                                 <Col xs sm="5" md="5" lg="3">
-                                    <BookIcon style={{ fontSize: "7rem" }} />
+                                    {/* <BookIcon style={{ fontSize: "7rem" }} /> */}
                                 </Col>
                                 <Col xs sm="7" md="7" lg="8">
                                     <h2 className="display-3">{materia.nome}</h2>

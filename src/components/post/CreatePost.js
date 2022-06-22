@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router";
 
 
-import CreateIcon from '@mui/icons-material/Create';
-import SendIcon from '@mui/icons-material/Send';
+// 
 
 function formataData() {
     var data = new Date(),
@@ -50,7 +49,9 @@ const CreatePost = () => {
 
     return (
         <div className="create w-50 mx-auto">
-            <h1 className="text-center my-5 border-bottom"> Nova Postagem <CreateIcon style={{ fontSize: "3.5rem" }} />  </h1>
+            <h1 className="text-center my-5 border-bottom"> Nova Postagem 
+            {/* <CreateIcon style={{ fontSize: "3.5rem" }} /> */}
+              </h1>
 
             <form onSubmit={handleSubmit} >
                 <input
@@ -75,7 +76,9 @@ const CreatePost = () => {
                     value={autor}
                     onChange={(e) => setAutor(e.target.value)}
                 ></input>
-                <button>Adicionar Postagem  <SendIcon /> </button>
+                <button>Adicionar Postagem  
+                    {/* <SendIcon />  */}
+                    </button>
             </form>
 
         </div>

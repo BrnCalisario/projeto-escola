@@ -1,5 +1,4 @@
-
-import BuildIcon from '@mui/icons-material/Build';
+// import BuildIcon from '@mui/icons-material/Build';
 import BoxAlunos from "../components/content/BoxAlunos";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 const Dashboard = () => {
@@ -41,7 +40,9 @@ const Dashboard = () => {
 
 
             <div className='mt-2 py-5' style={{marginTop: 100}}> 
-                <h1 className="text-center mt-5 py-5">Funções Disponíveis <BuildIcon style={{fontSize: "4rem"}}/></h1>
+                <h1 className="text-center mt-5 py-5">Funções Disponíveis 
+                {/* <BuildIcon style={{fontSize: "4rem"}}/> */}
+                </h1>
                 <ListGroup className='text-center w-75 ms-auto me-auto lista'>
                     <ListGroup.Item>Lançar notas do aluno</ListGroup.Item>
                     <ListGroup.Item>Postagem de materiais</ListGroup.Item>
