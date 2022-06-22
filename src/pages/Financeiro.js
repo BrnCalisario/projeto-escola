@@ -1,6 +1,5 @@
 import TabTitle from "../components/TabTitle";
 import Table from 'react-bootstrap/esm/Table'
-import { yellow } from "@mui/material/colors";
 
 const Financeiro = () => {
     

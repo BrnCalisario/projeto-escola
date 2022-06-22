@@ -31,7 +31,7 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <div className='mt-5'> 
+            <div className='mt-5 pt-5'> 
                 <h1 className="text-center mt-5">Funções Disponíveis <BuildIcon style={{fontSize: "4rem"}}/></h1>
                 <ListGroup className='text-center w-75 ms-auto me-auto lista'>
                     <ListGroup.Item>Acesso a matérias cadastradas</ListGroup.Item>

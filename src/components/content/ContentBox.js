@@ -21,7 +21,7 @@ const ContentBox = ({ content: materias, title, shouldLink }) => {
                 height: 'auto',
             }}
                 className='content-box overflow-auto'>
-                {materias.map((materia) => (
+                {materias && materias.map((materia) => (
                     <div className="materia text-dark" key={materia.id}>
 
                         {shouldLink ? <Link to={'/materias/' + materia.id}>

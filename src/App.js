@@ -12,6 +12,7 @@ import Materia from "./components/Materia";
 import Post from "./components/post/Post";
 import CreatePost from "./components/post/CreatePost";
 import Financeiro from "./pages/Financeiro";
+import Dashboard from "./pages/Dashboard";
 
 
 function App() {
@@ -41,6 +42,11 @@ function App() {
                         </Route>
                         <Route path="/responsavel/financeiro">
                             <Financeiro />
+                        </Route>
+
+
+                        <Route path="/professor/dashboard">
+                            <Dashboard />
                         </Route>
 
 
