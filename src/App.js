@@ -18,12 +18,19 @@ import Dashboard from "./pages/professor/Dashboard";
 import ForumAluno from "./pages/aluno/ForumAluno";
 import Main from "./pages/Main";
 import HomeResp from "./pages/responsavel/HomeResp";
-import ForumResp from "./pages/responsavel/ForumResp"
+import ForumResp from "./pages/responsavel/ForumResp";
+import BoletimResp from "./pages/responsavel/BoletimResp";
+import AulasResp from "./pages/responsavel/AulasResp";
+
 import Matricula from "./pages/responsavel/Matricula";
+
+
 import HomeSec from "./pages/secretaria/HomeSec";
 import MatriculaSec from "./pages/secretaria/MatriculaSec";
 import ForumSec from "./pages/secretaria/ForumSec";
 import PostSec from "./pages/secretaria/PostSec";
+
+
 
 function App() {
     return (
@@ -54,6 +61,13 @@ function App() {
                         <Route exact path="/responsavel">
                             <HomeResp />
                         </Route>
+                        <Route exact path="/responsavel/aulas">
+                            <AulasResp />
+                        </Route>
+                        <Route exatc path="/responsavel/boletim">
+                            <BoletimResp />
+                        </Route>
+
                         <Route exact path="/responsavel/matricula">
                             <Matricula />
                         </Route>

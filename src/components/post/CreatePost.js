@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Container } from "react-bootstrap";
 import { useHistory } from "react-router";
+import NavbarAluno from "../NavbarAluno";
 
 
 // 
@@ -48,39 +50,43 @@ const CreatePost = () => {
     }
 
     return (
-        <div className="create w-50 mx-auto">
-            <h1 className="text-center my-5 border-bottom"> Nova Postagem 
-            {/* <CreateIcon style={{ fontSize: "3.5rem" }} /> */}
-              </h1>
+        <div>
+            <NavbarAluno />
+            <Container >
+                <div className="create w-50 mx-auto">
+                    <h1 className="text-center my-5 border-bottom"> Nova Postagem
+                        {/* <CreateIcon style={{ fontSize: "3.5rem" }} /> */}
+                    </h1>
 
-            <form onSubmit={handleSubmit} >
-                <input
-                    type="text"
-                    required
-                    placeholder='Assunto'
-                    value={assunto}
-                    onChange={(e) => setAssunto(e.target.value)}
-                ></input>
-                <textarea
-                    type="text"
-                    required
-                    placeholder='Insira o conteúdo da postagem'
-                    rows="8"
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
-                ></textarea>
-                <input
-                    type="text"
-                    required
-                    placeholder='Autor'
-                    value={autor}
-                    onChange={(e) => setAutor(e.target.value)}
-                ></input>
-                <button>Adicionar Postagem  
-                    {/* <SendIcon />  */}
-                    </button>
-            </form>
-
+                    <form onSubmit={handleSubmit} >
+                        <input
+                            type="text"
+                            required
+                            placeholder='Assunto'
+                            value={assunto}
+                            onChange={(e) => setAssunto(e.target.value)}
+                        ></input>
+                        <textarea
+                            type="text"
+                            required
+                            placeholder='Insira o conteúdo da postagem'
+                            rows="8"
+                            value={body}
+                            onChange={(e) => setBody(e.target.value)}
+                        ></textarea>
+                        <input
+                            type="text"
+                            required
+                            placeholder='Autor'
+                            value={autor}
+                            onChange={(e) => setAutor(e.target.value)}
+                        ></input>
+                        <button>Adicionar Postagem
+                            {/* <SendIcon />  */}
+                        </button>
+                    </form>
+                </div>
+            </Container>
         </div>
     );
 }
