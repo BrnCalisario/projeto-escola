@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/projeto-escola/static/css/main.97f1029d.css",
+    "main.js": "/projeto-escola/static/js/main.e9f48048.js",
+    "static/media/logo.png": "/projeto-escola/static/media/logo.5053ed063958c63d619c.png",
+    "index.html": "/projeto-escola/index.html",
+    "main.97f1029d.css.map": "/projeto-escola/static/css/main.97f1029d.css.map",
+    "main.e9f48048.js.map": "/projeto-escola/static/js/main.e9f48048.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97f1029d.css",
+    "static/js/main.e9f48048.js"
+  ]
+}
