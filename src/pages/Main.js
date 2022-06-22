@@ -47,6 +47,11 @@ const Main = () => {
 
     const contas = [alunos, responsaveis]
 
+    const admin = {
+        login: "admin",
+        pw: "0000"
+    }
+
     function checkUser(accountType, path) {
 
         if (!user || !password) {
@@ -57,19 +62,25 @@ const Main = () => {
         const inputUser = JSON.stringify({ login: user, pw: password })
         let isValid = false;
 
-        accountType.forEach(conta => {
-            conta = JSON.stringify(conta);
-            if (conta === inputUser) {
-                isValid = true;
-            }
-        });
-
-        if (isValid) {
-            alert("Seja bem-vindo " + user);
-            history.push(path);
+        if (inputUser === JSON.stringify(admin)) {
+            history.push("/secretaria")
         } else {
-            alert("Usuário ou Senha Inválidos")
+            accountType.forEach(conta => {
+                conta = JSON.stringify(conta);
+                if (conta === inputUser) {
+                    isValid = true;
+                }
+            });
+    
+            if (isValid) {
+                alert("Seja bem-vindo " + user);
+                history.push(path);
+            } else {
+                alert("Usuário ou Senha Inválidos")
+            }
         }
+
+        
     }
 
 
