@@ -24,7 +24,7 @@ const ContentBox = ({ content: materias, title, shouldLink }) => {
                 {materias && materias.map((materia) => (
                     <div className="materia text-dark" key={materia.id}>
 
-                        {shouldLink ? <Link to={'/materias/' + materia.id}>
+                        {shouldLink ? <Link to={'/aluno/materias/' + materia.id}>
                             <Content
                                 key={materia.id}
                                 title={materia.nome}

@@ -4,10 +4,13 @@ import InfoIcon from '@mui/icons-material/Info';
 import BuildIcon from '@mui/icons-material/Build';
 
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
+import NavbarAluno from '../../components/NavbarAluno';
 
 const Home = () => {
     return (
         <div>
+            <NavbarAluno />
+            <Container id="content">
             <h1 className="text-center mt-5 border-bottom">Painel do Aluno</h1>
             <Container className="mt-5">
                 <Row>
@@ -40,7 +43,7 @@ const Home = () => {
                 </ListGroup>
 
             </div>
-
+            </Container>
         </div>
 
     );

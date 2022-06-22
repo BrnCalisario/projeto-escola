@@ -8,7 +8,7 @@ import Nav from "react-bootstrap/Nav";
 // Logo Image
 import logo from '../images/logo.png'
 
-const NavBar = () => {
+const NavbarAluno = () => {
     return (
         <Navbar expand="lg" className="my-navbar py-2">
             <Container>
@@ -25,15 +25,15 @@ const NavBar = () => {
 
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end text-center mx-2">
 
-                    <LinkContainer to="/">
+                    <LinkContainer to="/aluno">
                         <Nav.Link className='link-light'>Home</Nav.Link>
                     </LinkContainer>
 
-                    <LinkContainer to="/aulas">
+                    <LinkContainer to="/aluno/aulas">
                         <Nav.Link className='link-light'>Aulas</Nav.Link>
                     </LinkContainer>
 
-                    <LinkContainer to='/boletim'>
+                    <LinkContainer to='/aluno/boletim'>
                         <Nav.Link className='link-light'>Boletim</Nav.Link>
                     </LinkContainer>
 
@@ -41,8 +41,10 @@ const NavBar = () => {
                         <Nav.Link className='link-light'>Fórum</Nav.Link>
                     </LinkContainer>
 
+                    <LinkContainer to='/'>
+                        <Nav.Link className='link-light'>Sair</Nav.Link>
+                    </LinkContainer>
 
-                    <Nav.Link className='link-light'>Sair</Nav.Link>
 
                 </Navbar.Collapse>
             </Container>
@@ -50,4 +52,4 @@ const NavBar = () => {
     );
 }
 
-export default NavBar;
+export default NavbarAluno;

@@ -1,38 +1,51 @@
-import NavBar from "./components/Navbar";
+import NavBarAluno from "./components/NavbarAluno";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import Aulas from "./pages/Aulas";
+
+import Home from "./pages/aluno/Home";
+import Aulas from "./pages/aluno/Aulas";
+import Forum from "./pages/aluno/ForumAluno";
+import Boletim from "./pages/aluno/Boletim";
+
 import Matricula from "./pages/Matricula";
 
+
 import { Container } from "react-bootstrap";
-import Notas from "./pages/Notas";
-import Forum from "./pages/Forum";
+
 import Test from "./components/Test";
 import Materia from "./components/Materia";
 import Post from "./components/post/Post";
 import CreatePost from "./components/post/CreatePost";
 import Financeiro from "./pages/Financeiro";
+
+
 import Dashboard from "./pages/Dashboard";
+import ForumAluno from "./pages/aluno/ForumAluno";
+import Main from "./pages/Main";
+
 
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <NavBar />
-                <Container id="content">
+                {/* <Container id="content"> */}
                         <Switch>
                         
                         <Route exact path="/">
+                            <Main />
+                        </Route>
+
+
+                        <Route exact path="/aluno">
                             <Home />
                         </Route>
-                        <Route exact path="/aulas">
+                        <Route exact path="/aluno/aulas">
                             <Aulas />
                         </Route>
-                        <Route path="/boletim">
-                            <Notas />
+                        <Route path="/aluno/boletim">
+                            <Boletim />
                         </Route>
-                        <Route path="/materias/:id">
+                        <Route path="/aluno/materias/:id">
                             <Materia />
                         </Route>
 
@@ -43,8 +56,6 @@ function App() {
                         <Route path="/responsavel/financeiro">
                             <Financeiro />
                         </Route>
-
-
                         <Route path="/professor/dashboard">
                             <Dashboard />
                         </Route>
@@ -54,7 +65,7 @@ function App() {
                             <Post />
                         </Route>
                         <Route exact path="/forum">
-                            <Forum />
+                            <ForumAluno />
                         </Route>
                         <Route path="/novo-post">
                             <CreatePost />
@@ -68,7 +79,7 @@ function App() {
                         </Route>
 
                         </Switch>
-                </Container>
+                {/* </Container> */}
             </div>
         </Router>
     );

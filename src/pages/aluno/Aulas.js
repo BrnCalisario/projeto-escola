@@ -1,8 +1,11 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
-import Calendario from '../components/Calendario';
-import ContentBox from '../components/content/ContentBox';
-import useFetch from '../hooks/useFetch';
+
+import NavbarAluno from '../../components/NavbarAluno';
+
+import Calendario from '../../components/Calendario';
+import ContentBox from '../../components/content/ContentBox';
+import useFetch from '../../hooks/useFetch';
 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SchoolIcon from '@mui/icons-material/School';
@@ -15,7 +18,8 @@ const Aulas = () => {
     return (
 
         <div>
-            <Container className='mt-5 border-bottom'>
+            <NavbarAluno />
+            <Container id="content" className='mt-5 border-bottom'>
                 <Row className='row align-items-start'>
                     <Col xs md="6">
                         <h2 className='border-bottom text-start bg'><CalendarMonthIcon style={{fontSize: "5rem"}}/> Agenda</h2>

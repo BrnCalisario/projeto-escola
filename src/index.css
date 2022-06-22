@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
 }
@@ -19,14 +23,48 @@ body {
     background: linear-gradient(68.15deg, #0e1f36 19.62%, #194b91 85.61%);
 }
 
-#logo-title {
-    font-size: 30px;
-    text-decoration: none;
-}
 
 .my-navbar a {
     font-size: 25px;
 }
+
+#login-screen {
+    background: linear-gradient(68.15deg, #0e1f36 19.62%, #194b91 85.61%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#login-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-screen button {
+    color: #000;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    clear: both;
+    font-size: 1.2rem;
+    font-size: 30px;
+}
+
+#login-screen input {
+    width: 30;
+}
+
+#login-screen input[type="text"] {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
 
 #content {
     font-family: 'Open Sans', sans-serif;
