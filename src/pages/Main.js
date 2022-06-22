@@ -44,17 +44,21 @@ const Main = () => {
         }
 
         const inputUser = JSON.stringify({ login: user, pw: password })
+        let isValid = false;
 
         accountType.forEach(conta => {
             conta = JSON.stringify(conta);
             if (conta === inputUser) {
-                alert("Seja bem-vindo " + user);
-                history.push(path);
-                return;
+                isValid = true;
             }
-        });   
-        
-        console.log("Usuário ou senha incorretos")
+        });
+
+        if (isValid) {
+            alert("Seja bem-vindo " + user);
+            history.push(path);
+        } else {
+            alert("Usuário ou Senha Inválidos")
+        }
     }
 
 
@@ -91,18 +95,18 @@ const Main = () => {
                     <div className="mt-3">
 
                         <button
-                            onClick={ () => checkUser(alunos, "/aluno") }
+                            onClick={() => checkUser(alunos, "/aluno")}
                             className="mx-2"
-                            style={{ background: "#6b3fd6", color: "#FFF", padding: "1rem"}} >
+                            style={{ background: "#6b3fd6", color: "#FFF", padding: "1rem" }} >
                             {/* <LinkContainer to="aluno">
                                 <Nav.Link className='d-inline-block link-light'>Aluno</Nav.Link>
                             </LinkContainer> */}Aluno
                         </button>
 
                         <button
-                            onClick={ () => checkUser(responsaveis, "/responsavel") }
+                            onClick={() => checkUser(responsaveis, "/responsavel")}
                             className="mx-2"
-                            style={{ background: "#18b5b0", color: "#FFF", padding: "1rem"}}>
+                            style={{ background: "#18b5b0", color: "#FFF", padding: "1rem" }}>
                             {/* <LinkContainer to="/responsavel/matricula">
                                 <Nav.Link className='d-inline-block link-light'>Responsável</Nav.Link>
                             </LinkContainer> */}Responsável
