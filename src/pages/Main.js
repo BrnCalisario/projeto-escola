@@ -18,7 +18,7 @@ const Main = () => {
             pw: "0000"
         },
         {
-            login: "matheus01",
+            login: "renan01",
             pw: "1111"
         }
     ]
@@ -29,7 +29,7 @@ const Main = () => {
             pw: "0000"
         },
         {
-            login: "marcos01",
+            login: "sergio01",
             pw: "0000"
         }
     ]
@@ -50,11 +50,11 @@ const Main = () => {
             if (conta === inputUser) {
                 alert("Seja bem-vindo " + user);
                 history.push(path);
-                return 0;
-            } else if (conta !== inputUser) {
-                alert("Usuário ou Senha Inválidos")
+                return;
             }
-        });    
+        });   
+        
+        console.log("Usuário ou senha incorretos")
     }
 
 

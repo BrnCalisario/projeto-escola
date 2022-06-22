@@ -118,6 +118,37 @@
       "conteudo": "Conteúdo da Postagem",
       "data": "21/06/2022",
       "id": 5
+    },
+    {
+      "autor": "Teste",
+      "assunto": "Assunto Teste",
+      "conteudo": "Conteúdo Teste",
+      "data": "22/06/2022",
+      "id": 6
+    }
+  ],
+  "matriculas": [
+    {
+      "id": 1,
+      "nomeCompleto": "Pedrinho Lemos",
+      "cpf": "111.222.333-44",
+      "email": "pedro@gmail.com",
+      "telefone": "+55 41 11111-4444",
+      "endereco": "Rua Souza",
+      "numEndereco": "321",
+      "anoLetivo": "5ª",
+      "matriculado": false
+    },
+    {
+      "nomeC": "Bruno",
+      "cpf": "123.121.312-13",
+      "email": "brbrbrbr",
+      "telefone": "+55 13 21313-1414",
+      "endereco": "brbrbrbrbr",
+      "numEnd": "121",
+      "anoLet": "5º",
+      "matriculado": false,
+      "id": 2
     }
   ]
 }

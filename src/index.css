@@ -135,3 +135,9 @@ p {
 form {
     overflow: hidden;
 }
+
+.info-row p {
+    font-size: 20px;
+    margin: 0px 0;
+    padding: 5px 0;
+}

@@ -1,8 +1,10 @@
 import TabTitle from "../components/TabTitle";
 import Table from 'react-bootstrap/esm/Table'
+import NavbarResp from "./responsavel/NavbarResp";
+import { Container } from "react-bootstrap";
 
 const Financeiro = () => {
-    
+
     const pagamentos = [
         {
             "id": 1,
@@ -29,13 +31,13 @@ const Financeiro = () => {
             "status": "Pendente",
         }
     ]
-    
+
     function checkStatus(data) {
-        
+
         let dateF = data.split("/");
         var dataAtual = new Date();
         var dataCheck = new Date(dateF[2], dateF[1], dateF[0]);
-        
+
         let mesAtual = dataAtual.getMonth()
         let mesCheck = dataCheck.getMonth()
 
@@ -43,7 +45,7 @@ const Financeiro = () => {
             return "Vencido"
         }
 
-        if(mesCheck > mesAtual) {
+        if (mesCheck > mesAtual) {
             return "Pendente"
         }
 
@@ -56,39 +58,43 @@ const Financeiro = () => {
 
         return "Pendente"
     }
-    
+
     return (
         <div>
-            <h1 className="text-center my-5 border-bottom">Financeiro</h1>
 
-            <TabTitle>Meus Pagamentos</TabTitle>
-            <Table hover responsive className="text-center">
-                <thead>
-                    <tr>
-                        <td>Aluno</td>
-                        <td>Referência</td>
-                        <td>Valor</td>
-                        <td>Vencimento</td>
-                        <td>Status</td>
-                        <td>Boleto</td>
-                    </tr>
-                </thead>
+            <NavbarResp />
 
-                <tbody>
-                    {pagamentos.map((pag) => (
-                        <tr key={pag.id}>
-                            <th>{ pag.nomeAluno }</th>
-                            <th>{ pag.referencia }</th>
-                            <th>{ pag.valor }</th>
-                            <th>{ pag.vencimento }</th>
-                            <th>{ checkStatus(pag.vencimento) }</th>
-                            <th><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" >Baixar</a></th>
+            <Container >
+                <h1 className="text-center my-5 border-bottom">Financeiro</h1>
+
+                <TabTitle>Meus Pagamentos</TabTitle>
+                <Table hover responsive className="text-center">
+                    <thead>
+                        <tr>
+                            <td>Aluno</td>
+                            <td>Referência</td>
+                            <td>Valor</td>
+                            <td>Vencimento</td>
+                            <td>Status</td>
+                            <td>Boleto</td>
                         </tr>
-                    ))}
-                </tbody>
-            </Table>
+                    </thead>
 
+                    <tbody>
+                        {pagamentos.map((pag) => (
+                            <tr key={pag.id}>
+                                <th>{pag.nomeAluno}</th>
+                                <th>{pag.referencia}</th>
+                                <th>{pag.valor}</th>
+                                <th>{pag.vencimento}</th>
+                                <th>{checkStatus(pag.vencimento)}</th>
+                                <th><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" >Baixar</a></th>
+                            </tr>
+                        ))}
+                    </tbody>
+                </Table>
 
+            </Container>
         </div>
     );
 }

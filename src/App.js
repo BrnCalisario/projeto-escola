@@ -6,7 +6,7 @@ import Aulas from "./pages/aluno/Aulas";
 import Forum from "./pages/aluno/ForumAluno";
 import Boletim from "./pages/aluno/Boletim";
 
-import Matricula from "./pages/Matricula";
+
 
 
 import { Container } from "react-bootstrap";
@@ -21,8 +21,9 @@ import Financeiro from "./pages/Financeiro";
 import Dashboard from "./pages/Dashboard";
 import ForumAluno from "./pages/aluno/ForumAluno";
 import Main from "./pages/Main";
-
-
+import HomeResp from "./pages/responsavel/HomeResp";
+import ForumResp from "./pages/responsavel/ForumResp"
+import Matricula from "./pages/responsavel/Matricula";
 
 function App() {
     return (
@@ -50,15 +51,24 @@ function App() {
                         </Route>
 
 
-                        <Route path="/responsavel/matricula">
+                        <Route exact path="/responsavel">
+                            <HomeResp />
+                        </Route>
+                        <Route exact path="/responsavel/matricula">
                             <Matricula />
                         </Route>
-                        <Route path="/responsavel/financeiro">
+                        <Route exact path="/responsavel/financeiro">
                             <Financeiro />
                         </Route>
-                        <Route path="/professor/dashboard">
+                        <Route exact path="/responsavel/forum">
+                            <ForumResp />
+                        </Route>
+
+
+                        <Route exact path="/professor/dashboard">
                             <Dashboard />
                         </Route>
+
 
 
                         <Route path="/forum/:id">

@@ -13,13 +13,13 @@ const Home = () => {
             <Container id="content">
             <h1 className="text-center mt-5 border-bottom">Painel do Aluno</h1>
             <Container className="mt-5">
-                <Row>
+                <Row className="info-row"> 
                     <Col md="12" lg="6" className='border'>
                         {/* <AccountBoxIcon className="d-inline-block me-2" style={{ fontSize: "8rem" }} /> */}
                         <div className='d-inline-block align-top'>
-                            <h2>Renan Odoni</h2>
-                            <h4>5º Ano</h4>
-                            <h4>Nº Matrícula: 11420142946 </h4>
+                            <h2>Nome: Renan Odoni</h2>
+                            <p>Ano: 5º Ano</p>
+                            <p>Nº Matrícula: 11420142946 </p>
                         </div>
                     </Col>
                     <Col md="12" lg="6" className='border'>
@@ -27,8 +27,8 @@ const Home = () => {
 
                         <div className='d-inline-block align-top'>
                             <h2 >Informações</h2>
-                            <h4>Telefone: (41) 9999-9999</h4>
-                            <h4>Email: renan.odoni@gmail.com</h4>
+                            <p>Telefone: (41) 9999-9999</p>
+                            <p>Email: renan.odoni@gmail.com</p>
                         </div>
                     </Col>
                 </Row>
